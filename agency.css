@@ -1,0 +1,101 @@
+/* Shared AffArts presentation, adapted from the approved Bastion proposal. */
+
+.v3.agency-template{--font-display:Halvar,Arial,sans-serif;--font-body:Golos,Arial,sans-serif;--font-numeric:var(--font-body)}
+.v3.agency-template :is(h1,h2,h3,h4){font-family:var(--font-display);font-weight:800;overflow-wrap:break-word}
+.v3.agency-template :is(.project-stats strong,.step-index){font-family:var(--font-numeric);font-variant-numeric:lining-nums tabular-nums}
+
+.agency-template .header-wordmark img{display:block;width:197px;height:auto;filter:brightness(0) invert(1)}
+.agency-template .welcome-brand>p{margin-top:0}
+.v3.agency-template .case-top-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:64px 16px;align-items:start}
+.v3.agency-template .case-top-grid .case{display:block;min-width:0}
+.v3.agency-template .case-top-grid .case h3{font-size:clamp(16px,1.5625vw,24px);line-height:1.08;min-height:0;max-width:437px;margin:0 0 16px}
+.v3.agency-template .case-top-grid .case img{display:block;width:100%;height:auto;aspect-ratio:1.75;margin:0;object-fit:cover}
+.v3.agency-template .case-top-grid .case:nth-child(7n+1),.v3.agency-template .case-top-grid .case:nth-child(7n+2),.v3.agency-template .case-top-grid .case:nth-child(7n+3){align-self:end}
+.v3.agency-template .case-top-grid .case:nth-child(7n+5),.v3.agency-template .case-top-grid .case:nth-child(7n+6){grid-column:span 2}
+.v3.agency-template .case-top-grid .case:nth-child(7n+5) h3,.v3.agency-template .case-top-grid .case:nth-child(7n+6) h3{font-size:clamp(22px,2.0833vw,32px);max-width:none}
+.agency-template a.dp-card{display:block;text-decoration:none;color:inherit;transition:box-shadow .2s ease}
+.agency-template a.dp-card:hover{box-shadow:inset 0 0 0 2px #e70204}
+.agency-template a.dp-card:focus-visible{outline:3px solid #e70204;outline-offset:3px}
+.agency-template .team-portrait-ceo{object-position:center 36%}
+.agency-template .contact-portrait,.agency-template .cta-avatar{object-position:center 36%}
+@media(max-width:999px){.agency-template .header-wordmark img{width:148px}}
+
+/* Compact spacing and image proportions from the client review. */
+.v3.agency-template .manifesto{min-height:0;padding:64px 24px 224px}
+.v3.agency-template .manifesto .signature{width:240px;left:auto;right:48px;bottom:24px}
+.agency-template .inline-cta{gap:8px;font-size:14px;line-height:1.2}
+.agency-template .inline-cta .cta-avatar{display:block;width:32px;height:32px;flex:0 0 32px;aspect-ratio:1;object-fit:cover;object-position:center 36%;border-radius:50%}
+.v3.agency-template .rankings{min-height:0;border-top-width:64px;padding-top:48px;padding-bottom:64px}
+.v3.agency-template .rankings .section-head{margin-bottom:36px}
+.v3.agency-template .rank-card{width:clamp(280px,28vw,384px);min-height:0;padding:20px}
+.v3.agency-template .rank-card h3{display:flex;justify-content:space-between;align-items:baseline;gap:12px;width:100%;font-size:28px}
+.v3.agency-template .rank-card .rank-year{font:500 14px/1 Golos,sans-serif;color:#b3b3b3;letter-spacing:0}
+.v3.agency-template .rank-card p{min-height:3.6em;margin-top:12px}
+.v3.agency-template .rank-card .diploma-link{width:100%;margin-top:24px}
+.v3.agency-template .rank-card .diploma-link img{width:100%;height:auto;max-height:none;margin:0}
+.v3.agency-template .rankings .rail-counter{margin-top:32px}
+.v3.agency-template .awards{padding-top:64px;padding-bottom:0}
+.v3.agency-template .award-grid{margin-top:40px}
+.v3.agency-template .dprofile{padding-top:64px;padding-bottom:64px}
+.v3.agency-template .dprofile .section-head{margin-bottom:36px}
+.v3.agency-template .solution-card h3{font-size:clamp(20px,1.9vw,28px);line-height:1.2;overflow-wrap:normal;word-break:normal;text-wrap:balance}
+.v3.agency-template .contacts{padding-bottom:40px}
+.v3.agency-template .footer-top{margin:0;padding:0;background:transparent;border:0}
+.v3.agency-template .footer-top nav{justify-content:space-between;gap:12px 28px}
+.v3.agency-template .footer-top nav a{border:0;border-radius:0;padding:4px 0}
+.v3.agency-template .footer-bottom{margin-top:28px}
+.v3.agency-template .review+.review{margin-top:64px}
+.v3.agency-template .review figcaption>.review-avatar{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;margin:0;border-radius:50%;background:#1e1e1e;color:#fff;font:700 16px/1 Golos,sans-serif}
+@media(max-width:999px){
+ .v3.agency-template .manifesto{padding:48px 16px 164px}
+ .v3.agency-template .manifesto .signature{width:160px;right:24px;bottom:20px}
+ .agency-template .inline-cta{font-size:12px}
+ .v3.agency-template .case-top-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 16px}
+ .v3.agency-template .case-top-grid .case:nth-child(n){grid-column:auto;align-self:end}
+ .v3.agency-template .case-top-grid .case:nth-child(n) h3{font-size:20px;max-width:none}
+ .v3.agency-template .solution-card h3{font-size:clamp(20px,6vw,28px)}
+ .v3.agency-template .rankings{border-top-width:40px;padding-top:40px;padding-bottom:40px}
+ .v3.agency-template .rank-card{width:min(300px,calc(100vw - 48px));padding:16px}
+ .v3.agency-template .rank-card h3{font-size:24px}
+ .v3.agency-template .awards{padding-top:40px}
+ .v3.agency-template .dprofile{padding-top:48px;padding-bottom:40px}
+ .v3.agency-template .contacts{padding-bottom:32px}
+ .v3.agency-template .footer-bottom{margin-top:24px}
+}
+@media(max-width:599px){.v3.agency-template .case-top-grid{grid-template-columns:1fr;gap:36px}.v3.agency-template .case-top-grid .case:nth-child(n) h3{font-size:20px}}
+
+.agency-template .team-card{width:calc((100% - 48px)/3)}
+.agency-template .team-portrait{width:190px;height:190px;object-fit:cover;object-position:center 36%;border-radius:50%}
+.agency-template .team-note{margin-top:28px;font:400 14px/1.5 Golos;color:#aaa}
+.v3.agency-template .pricing{padding-bottom:32px}
+.v3.agency-template .pricing-note{margin-top:16px}
+.agency-template .estimate-summary{padding-bottom:20px}
+.agency-template .page-options .page-option:last-child{margin-bottom:0}
+.agency-template .pricing-tools{display:flex;gap:28px;flex-wrap:wrap;margin-top:20px}
+.agency-template .pricing-tools a,.agency-template .pricing-tools button{font:500 13px/1.5 Golos;border:0;border-bottom:1px solid #999;background:transparent;padding:5px 0;cursor:pointer;color:#666;text-align:left}
+.agency-template .pricing-tools a:hover,.agency-template .pricing-tools button:hover{color:#131313}
+@media(max-width:999px){.agency-template .team-card{width:270px}.agency-template .team-portrait{width:170px;height:170px}.agency-template .calculator-grid{grid-template-columns:minmax(0,1fr)}.agency-template .calculator-grid>*{min-width:0}}
+@media(max-width:600px){.agency-template .fixed-item{grid-template-columns:16px minmax(0,1fr) auto}.agency-template .page-option{grid-template-columns:22px minmax(0,1fr) auto}}
+@media(max-width:359px){.agency-template .welcome-message h1{font-size:28px}.agency-template .fixed-heading{flex-wrap:wrap}.agency-template .faq-list button{font-size:19px}}
+@media print{
+ @page{size:A4;margin:12mm}
+ .agency-template .pricing-tools,.agency-template .price-change,.agency-template .summary-cta,.agency-template .mobile-estimate{display:none!important}
+ .agency-template .page-option:has(input:not(:checked)){display:none}
+ .agency-template .page-option input{display:none}
+ .agency-template .page-option{grid-template-columns:1fr auto;opacity:1;background:#fff;break-inside:avoid}
+ .agency-template .calculator-grid{display:flex;flex-direction:column;gap:24px}
+ .agency-template .calculator-grid>*{width:100%}
+ .agency-template .estimate-summary{position:static;order:-1;break-inside:avoid;margin:0 0 24px}
+ .agency-template .fixed-item{break-inside:avoid}
+ .agency-template .pricing h2{font-size:28px}
+ .agency-template .total-figure{font-size:36px}
+ .agency-template .team-rail{flex-wrap:wrap;overflow:visible}
+ .agency-template .team-card{width:45%;break-inside:avoid}
+ .agency-template .team-portrait{width:120px;height:120px}
+ .agency-template .rank-card{width:45%;break-inside:avoid}
+ .agency-template .case-top-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ .agency-template .case-top-grid .case:nth-child(n){grid-column:auto}
+ .agency-template .case-top-grid .case:nth-child(n) h3{font-size:16px}
+ .agency-template .review{break-inside:avoid}
+ .agency-template .review blockquote{font-size:16px;line-height:1.2}
+}
